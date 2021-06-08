@@ -15,7 +15,7 @@ sed -i "/uci commit network/i\uci set network.lan.broadcast='192.168.4.255'" $ZZ
 
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile            # 选择argon为默认主题
 
-sed -i "s/OpenWrt /${Author} Compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" $ZZZ           # 增加个性名字281677160
+sed -i "s/OpenWrt / OpenWrt /g" package/lean/default-settings/files/zzz-default-settings          # 增加个性名字281677160
 
 sed -i "/uci commit system/i\uci set system.@system[0].hostname='OpenWrt'" $ZZZ             # 修改主机名称为x86-64-OpenWrt
 
