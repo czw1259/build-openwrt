@@ -35,7 +35,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [Project_source]
+        target: [Lede_R2S]
 
         # [Lede_source,Lienol_source,Project_source,Spirit_source]
 
